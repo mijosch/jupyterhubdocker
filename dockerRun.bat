@@ -1,0 +1,1 @@
+docker run -p8002:8000 -p6006:6006 --gpus all --name jhtest jupyterhubdocker

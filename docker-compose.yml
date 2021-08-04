@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  jupyterhubdockker:
+    image: jupyterhubdockker
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - capabilities: [gpu]
